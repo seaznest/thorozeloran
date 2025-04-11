@@ -1,1 +1,14 @@
-print("Bot hazır.")
+{
+  "builds": [
+    {
+      "src": "userbot.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "userbot.py"
+    }
+  ]
+}
